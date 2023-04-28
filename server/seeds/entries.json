@@ -1,0 +1,24 @@
+[
+  {
+    "calmBreathing": true,
+    "progressiveMuscleRelaxation": true,
+    "exercise": true,
+    "other": true,
+    "gratitude1": "God",
+    "gratitude2": "Family",
+    "gratitude3": "Truth",
+    "feelingWheelColor": "#FF0000",
+    "entryDate": "2002-12-09"
+  },
+  {
+    "calmBreathing": false,
+    "progressiveMuscleRelaxation": false,
+    "exercise": false,
+    "other": false,
+    "gratitude1": "Peace",
+    "gratitude2": "Love",
+    "gratitude3": "Forgiveness",
+    "feelingWheelColor": "#0000FF",
+    "entryDate": "2012-10-28"
+  }
+]

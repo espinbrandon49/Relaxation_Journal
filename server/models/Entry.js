@@ -7,10 +7,10 @@ const entrySchema = new Schema({
   progressiveMuscleRelaxation: {
     type: Boolean,
   },
-  other: {
+    exercise: {
     type: Boolean,
   },
-  exercise: {
+  other: {
     type: Boolean,
   },
   gratitude1: {
@@ -33,6 +33,6 @@ const entrySchema = new Schema({
   },
 })
 
-const Entry = model("Entry", entrySchema);
+const Entry = model("entry", entrySchema);
 
 module.exports = Entry;
