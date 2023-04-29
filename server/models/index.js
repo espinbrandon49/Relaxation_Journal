@@ -1,3 +1,3 @@
 const Entry = require("./entry");
 
-module.exports = Entry;
+module.exports = {Entry};

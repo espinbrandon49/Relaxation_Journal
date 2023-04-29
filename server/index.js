@@ -1,4 +1,6 @@
 const express = require("express");
+const controllers = require("./controllers")
+require("dotenv").config();
 const db = require("./config/connection");
 const cors = require("cors");
 
@@ -13,6 +15,8 @@ app.use(cors())
 app.get("/", (req, res) => {
   res.send("Server is running...")
 });
+
+app.use(controllers);
 
 db.once('open', () => {
   app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));

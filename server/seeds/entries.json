@@ -20,5 +20,16 @@
     "gratitude3": "Forgiveness",
     "feelingWheelColor": "#0000FF",
     "entryDate": "2012-10-28"
+  },
+  {
+    "calmBreathing": false,
+    "progressiveMuscleRelaxation": true,
+    "exercise": false,
+    "other": true,
+    "gratitude1": "Security",
+    "gratitude2": "Recreation",
+    "gratitude3": "Housing",
+    "feelingWheelColor": "#0000FF",
+    "entryDate": "2032-09-18"
   }
 ]
