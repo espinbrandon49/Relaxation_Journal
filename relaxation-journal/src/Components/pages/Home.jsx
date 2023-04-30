@@ -17,7 +17,7 @@ const Home = () => {
       <p>The body responds to stress wiht muscle tension, which can cause pain or discomfort.  In turn tense muscle relay to the body that it is stressed!  This keeps the cycle of stress and muscle tension going.</p>
       <p>Progressive muscle relaxation helps break this cycle by <strong><em>reducing muscle tension and mental anxiety.</em></strong></p>
 
-      <h2>The benefits of relaxation techniques</h2>
+      <h2>The Benefits of Relaxation Techniques</h2>
       <ul>
         <li>Decreased heart rate and respiration rate</li>
         <li>Lowered blood pressure and increased blood flow</li>
