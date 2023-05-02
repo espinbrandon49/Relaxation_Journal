@@ -12,7 +12,13 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  transition: transform 0.3s ease;
   background: red;
+}
+
+body.show-nav {
+  /* Width of nav */
+  transform: translateX(12.5rem);
 }
 
 header {
@@ -29,4 +35,59 @@ header {
   margin: 0 auto;
   max-width: 100%;
   width: 50rem;
+}
+
+nav {
+  background-color: var(--primary-color);
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12.5rem;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 1.875rem 0;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 4.6875rem;
+  width: 4.6875rem;
+  border-radius: 50%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+.toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 12px;
 }

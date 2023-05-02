@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Home from './pages/Home';
 import CalmBreathing from './pages/CalmBreathing';
-import DailyRelaxationJournal from './pages/DailyRelaxationJournal';
+import DailyRelaxationLog from './pages/DailyRelaxationLog';
 import MuscleRelaxationGuide from './pages/MuscleRelaxationGuide';
 import ReducingTheTension from './pages/ReducingTheTension';
 import BodyScan from './pages/BodyScan';
@@ -16,8 +16,8 @@ const ContentContainer = () => {
     switch (page) {
       case "calmBreathing":
         return <CalmBreathing />;
-      case "dailyRelaxationJournal":
-        return <DailyRelaxationJournal />;
+      case "dailyRelaxationLog":
+        return <DailyRelaxationLog />;
       case "muscleRelaxationGuide":
         return <MuscleRelaxationGuide />;
       case "reducingTheTension":

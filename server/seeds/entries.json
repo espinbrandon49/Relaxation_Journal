@@ -8,7 +8,7 @@
     "gratitude2": "Family",
     "gratitude3": "Truth",
     "feelingWheelColor": "#FF0000",
-    "entryDate": "2002-12-09"
+    "entryDate": "2023-04-20"
   },
   {
     "calmBreathing": false,
@@ -19,7 +19,7 @@
     "gratitude2": "Love",
     "gratitude3": "Forgiveness",
     "feelingWheelColor": "#0000FF",
-    "entryDate": "2012-10-28"
+    "entryDate": "2023-04-21"
   },
   {
     "calmBreathing": false,
@@ -30,6 +30,17 @@
     "gratitude2": "Recreation",
     "gratitude3": "Housing",
     "feelingWheelColor": "#0000FF",
-    "entryDate": "2032-09-18"
+    "entryDate": "2023-04-22"
+  },
+    {
+    "calmBreathing": false,
+    "progressiveMuscleRelaxation": true,
+    "exercise": false,
+    "other": true,
+    "gratitude1": "Second Chances",
+    "gratitude2": "Kindness of Others",
+    "gratitude3": "Friends",
+    "feelingWheelColor": "#0000FF",
+    "entryDate": "2023-04-23"
   }
 ]
