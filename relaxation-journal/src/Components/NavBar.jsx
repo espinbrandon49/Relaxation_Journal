@@ -13,6 +13,7 @@ const NavBar = ({ page, handlePageChange }) => {
         <li onClick={() => handlePageChange("bodyScan")}>Body Scan</li>
         <li onClick={() => handlePageChange("muscleRelaxationGuide")}>Muscle Relaxation Guide</li>
         <li onClick={() => handlePageChange("dailyRelaxationLog")}>Daily Relaxation Log</li>
+        <li onClick={() => handlePageChange("feelingWheel")}> Feeling Wheel</li>
       </ul>
     </nav>
   )

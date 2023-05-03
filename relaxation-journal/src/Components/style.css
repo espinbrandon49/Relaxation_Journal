@@ -72,26 +72,31 @@ nav .logo img {
   border-radius: 50%;
 }
 
-nav ul, ul {
+nav ul,
+ul {
   padding: 0;
   list-style-type: none;
   margin: 0;
 }
 
-nav ul li, li {
+nav ul li,
+li {
   border-bottom: 2px solid rgba(200, 200, 200, 0.1);
   padding: 20px;
 }
 
-nav ul li:hover {
+nav ul li:hover,
+.feelingWheelLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-nav ul li:first-of-type, li:first-of-type {
+nav ul li:first-of-type,
+li:first-of-type {
   border-top: 2px solid rgba(200, 200, 200, 0.1);
 }
 
+/* Pages */
 .page {
   /* width: 37.5rem; */
   margin: 0 auto;
@@ -101,10 +106,18 @@ nav ul li:first-of-type, li:first-of-type {
   text-align: center;
 }
 
+/* Home */
+.homeLi li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Reducing The Tension */
 .reducingTheTension {
   text-align: center;
 }
 
+/* Calm Breathing */
 .calmBreathing {
   font-weight: bold;
 }
@@ -112,4 +125,64 @@ nav ul li:first-of-type, li:first-of-type {
 .calmBreathing .instructions {
   text-decoration: underline;
 }
+
+/* Muscle Relaxation Guide */
+.nestedLi li {
+  border: none;
+  padding: 0;
+  list-style-type: circle;
+}
+
+/* Body Scan */
+.feelingWheelLink {
+  color: blue;
+}
+
+/* Feeling Wheel */
+.feelingWheel {
+  height: 72vh;
+  background-image: url("../images/Feelings+Wheel+WIP.png");
+  background-position: top;
+  background-size: 93%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #777;
+  padding-top: 5px;
+}
+
+/* Daily Relaxation Log */
+.page table {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse:collapse;
+}
+
+th, td {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.dow{
+margin: 0;
+padding: 0;
+}
+
+.thtr {
+  border-right: 1px solid black;
+}
+
+.calmBreathingRow {
+  border-top: 1px solid black;
+}
+
+th {
+  width: 4.5rem;
+}
+
+td {
+  border-right: 1px solid black;
+  text-align: center;
+  width: 4.5rem;
+}
+
 

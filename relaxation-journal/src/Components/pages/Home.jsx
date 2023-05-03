@@ -18,7 +18,7 @@ const Home = () => {
       <p>Progressive muscle relaxation helps break this cycle by <strong><em>reducing muscle tension and mental anxiety.</em></strong></p>
 
       <h2>The Benefits of Relaxation Techniques</h2>
-      <ul>
+      <ul className='homeLi'>
         <li>Decreased heart rate and respiration rate</li>
         <li>Lowered blood pressure and increased blood flow</li>
         <li>Decrease in anxiety, depression and insomnia</li>
