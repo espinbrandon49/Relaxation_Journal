@@ -7,8 +7,7 @@
     "gratitude1": "God",
     "gratitude2": "Family",
     "gratitude3": "Truth",
-    "feelingWheelColor": "#FF0000",
-    "entryDate": "2023-04-20"
+    "feeling": "#FF0000"
   },
   {
     "calmBreathing": false,
@@ -18,8 +17,7 @@
     "gratitude1": "Peace",
     "gratitude2": "Love",
     "gratitude3": "Forgiveness",
-    "feelingWheelColor": "#0000FF",
-    "entryDate": "2023-04-21"
+    "feeling": "#0000FF"
   },
   {
     "calmBreathing": false,
@@ -29,8 +27,7 @@
     "gratitude1": "Security",
     "gratitude2": "Recreation",
     "gratitude3": "Housing",
-    "feelingWheelColor": "#0000FF",
-    "entryDate": "2023-04-22"
+    "feeling": "#0000FF"
   },
     {
     "calmBreathing": false,
@@ -40,7 +37,6 @@
     "gratitude1": "Second Chances",
     "gratitude2": "Kindness of Others",
     "gratitude3": "Friends",
-    "feelingWheelColor": "#0000FF",
-    "entryDate": "2023-04-23"
+    "feeling": "#0000FF"
   }
 ]

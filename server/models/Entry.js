@@ -7,7 +7,7 @@ const entrySchema = new Schema({
   progressiveMuscleRelaxation: {
     type: Boolean,
   },
-    exercise: {
+  exercise: {
     type: Boolean,
   },
   other: {
@@ -25,13 +25,12 @@ const entrySchema = new Schema({
     type: String,
     trim: true,
   },
-  feelingWheelColor: {
+  feeling: {
     type: String,
   },
-  entryDate: {
-    type: Date,
-  },
-})
+},
+  { timestamps: true }
+)
 
 const Entry = model("Entry", entrySchema);
 

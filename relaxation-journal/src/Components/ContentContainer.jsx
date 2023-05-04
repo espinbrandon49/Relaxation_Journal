@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Home from './pages/Home';
 import CalmBreathing from './pages/CalmBreathing';
-import DailyRelaxationLog from './pages/dailyRelaxationLog/DailyRelaxationLog';
+import DailyRelaxationLog from './pages/dailyRelaxationLog/DailyRelaxationLog'
 import MuscleRelaxationGuide from './pages/MuscleRelaxationGuide';
 import ReducingTheTension from './pages/ReducingTheTension';
 import BodyScan from './pages/BodyScan';
 import NavBar from './NavBar';
-import "./style.css"
 import FeelingWheel from './pages/FeelingWheel';
+import RelaxationJournal from './pages/RelaxationJournal/RelaxationJournal';
+import "./style.css"
 
 const ContentContainer = () => {
   const [page, setPage] = useState('home');
@@ -27,6 +28,8 @@ const ContentContainer = () => {
         return <BodyScan page={page} handlePageChange={handlePageChange} />;
       case "feelingWheel":
         return <FeelingWheel page={page} handlePageChange={handlePageChange} />;
+      case "relaxationJournal":
+        return <RelaxationJournal />;
       default:
         return <Home />;
     };
