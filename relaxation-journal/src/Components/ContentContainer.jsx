@@ -12,7 +12,7 @@ import RelaxationJournal from './pages/RelaxationJournal/RelaxationJournal';
 import "./style.css"
 
 const ContentContainer = () => {
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState('relaxationJournal');
 
   const renderPage = () => {
     switch (page) {
@@ -40,7 +40,7 @@ const ContentContainer = () => {
   return (
     <>
       <Header />
-      <div className='container' >
+      <div className='containerJ' >
         {renderPage()}
       </div>
       <NavBar page={page} handlePageChange={handlePageChange} />

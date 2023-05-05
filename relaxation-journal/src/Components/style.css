@@ -11,15 +11,15 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
+  font-family: 'Lato', sans-serif !important;
+  margin: 0 !important;
   transition: transform 0.3s ease;
-  background: red;
+  background: red !important;
 }
 
 body.show-nav {
   /* Width of nav */
-  transform: translateX(12.5rem);
+  transform: translateX(13.5rem);
 }
 
 header {
@@ -42,7 +42,7 @@ header {
   padding: 8px 12px;
 }
 
-.container {
+.containerJ {
   padding: .75rem;
   margin: 0 auto;
   max-width: 100%;
@@ -56,8 +56,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 12.5rem;
-  height: 120vh;
+  width: 13.5rem;
+  height: 100vh;
   z-index: 100;
   transform: translateX(-100%);
 }
@@ -103,6 +103,7 @@ li:first-of-type {
 
 .page h2 {
   text-align: center;
+  padding: 1rem 0;
 }
 
 /* Home */
@@ -193,3 +194,19 @@ textarea {
   cursor: pointer;
   margin-top: 2rem;
 }
+
+/* Relaxation Journal */
+
+.Jradios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordian {
+  border-bottom: 2px solid var(--list-border-color);
+}
+
+/* .JwhatWentWellToday li {
+  border: none;
+  padding: 0;
+} */

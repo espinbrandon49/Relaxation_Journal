@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProgressiveMuscleRelaxationDiv = () => {
+const ProgressiveMuscleRelaxationDiv = ({tempEntry}) => {
   const name = "progressiveMuscleRelaxation";
   return (
     <div>
@@ -9,7 +9,9 @@ const ProgressiveMuscleRelaxationDiv = () => {
         <input
           type="radio"
           id={`${name}Y`}
-          name={name} />
+          name={name}
+          onClick={() => tempEntry.progressiveMuscleRelaxation = true}
+          />
         <label htmlFor={`${name}Y`}>yes</label>
       </div>
       <div>
@@ -17,6 +19,7 @@ const ProgressiveMuscleRelaxationDiv = () => {
           type="radio"
           id={`${name}N`}
           name={`${name}`}
+          onClick={() => tempEntry.progressiveMuscleRelaxation = false}
         />
         <label htmlFor={`${name}N`}>no &nbsp;</label>
       </div>

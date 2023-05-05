@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CalmBreathingDiv = () => {
+const CalmBreathingDiv = ({ tempEntry }) => {
   const name = "calmBreathing";
 
   return (
@@ -10,7 +10,9 @@ const CalmBreathingDiv = () => {
         <input
           type="radio"
           id={`${name}Y`}
-          name={name} />
+          name={name}
+          onClick={() => tempEntry.calmBreathing = true}
+        />
         <label htmlFor={`${name}Y`}>yes</label>
       </div>
       <div>
@@ -18,6 +20,7 @@ const CalmBreathingDiv = () => {
           type="radio"
           id={`${name}N`}
           name={`${name}`}
+          onClick={() => tempEntry.calmBreathing = false}
         />
         <label htmlFor={`${name}N`}>no &nbsp;</label>
       </div>

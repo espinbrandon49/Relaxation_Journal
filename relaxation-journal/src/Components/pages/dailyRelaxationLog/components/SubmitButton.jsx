@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SubmitButton = () => {
+const SubmitButton = ({addToJournal}) => {
   return (
     <div className='button'>
-      <button className='addEntry'>Add Entry to Journal</button>
+      <button className='addEntry' onClick={addToJournal}>Add Entry to Journal</button>
     </div>
   )
 }

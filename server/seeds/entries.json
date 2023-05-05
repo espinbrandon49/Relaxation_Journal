@@ -7,7 +7,7 @@
     "gratitude1": "God",
     "gratitude2": "Family",
     "gratitude3": "Truth",
-    "feeling": "#FF0000"
+    "feeling": "Happy"
   },
   {
     "calmBreathing": false,
@@ -17,7 +17,7 @@
     "gratitude1": "Peace",
     "gratitude2": "Love",
     "gratitude3": "Forgiveness",
-    "feeling": "#0000FF"
+    "feeling": "Proud"
   },
   {
     "calmBreathing": false,
@@ -27,7 +27,7 @@
     "gratitude1": "Security",
     "gratitude2": "Recreation",
     "gratitude3": "Housing",
-    "feeling": "#0000FF"
+    "feeling": "Courageous"
   },
     {
     "calmBreathing": false,
@@ -37,6 +37,6 @@
     "gratitude1": "Second Chances",
     "gratitude2": "Kindness of Others",
     "gratitude3": "Friends",
-    "feeling": "#0000FF"
+    "feeling": "Nervous"
   }
 ]
