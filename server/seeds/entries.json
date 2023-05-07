@@ -7,7 +7,8 @@
     "gratitude1": "God",
     "gratitude2": "Family",
     "gratitude3": "Truth",
-    "feeling": "Happy"
+    "feeling": "Happy",
+    "postedBy": "6456fc65a30d888ec3769545"
   },
   {
     "calmBreathing": false,
@@ -17,7 +18,8 @@
     "gratitude1": "Peace",
     "gratitude2": "Love",
     "gratitude3": "Forgiveness",
-    "feeling": "Proud"
+    "feeling": "Proud",
+    "postedBy": "6456fc65a30d888ec3769545"
   },
   {
     "calmBreathing": false,
@@ -27,7 +29,8 @@
     "gratitude1": "Security",
     "gratitude2": "Recreation",
     "gratitude3": "Housing",
-    "feeling": "Courageous"
+    "feeling": "Courageous",
+    "postedBy": "6456fc65a30d888ec3769546"
   },
     {
     "calmBreathing": false,
@@ -37,6 +40,7 @@
     "gratitude1": "Second Chances",
     "gratitude2": "Kindness of Others",
     "gratitude3": "Friends",
-    "feeling": "Nervous"
+    "feeling": "Nervous",
+    "postedBy": "6456fc65a30d888ec3769546"
   }
 ]

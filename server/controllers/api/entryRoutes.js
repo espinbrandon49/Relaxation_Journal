@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Entry } = require("../../models");
 
 router.get('/journal', async (req, res) => {
-  Entry.find().then((result) => {
+  Entry.find().populate("postedBy").then((result) => {
     res.send(result)
   })
 });

@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import Header from './Header';
+import Header from './Header/Header';
 import Home from './pages/Home';
 import CalmBreathing from './pages/CalmBreathing';
 import DailyRelaxationLog from './pages/dailyRelaxationLog/DailyRelaxationLog'
 import MuscleRelaxationGuide from './pages/MuscleRelaxationGuide';
 import ReducingTheTension from './pages/ReducingTheTension';
 import BodyScan from './pages/BodyScan';
-import NavBar from './NavBar';
+import NavBar from './NavBar/NavBar';
 import FeelingWheel from './pages/FeelingWheel';
 import RelaxationJournal from './pages/RelaxationJournal/RelaxationJournal';
 import "./style.css"
 
 const ContentContainer = () => {
-  const [page, setPage] = useState('relaxationJournal');
+  const [page, setPage] = useState('home');
 
   const renderPage = () => {
     switch (page) {

@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif !important;
   margin: 0 !important;
   transition: transform 0.3s ease;
-  /* background: red !important; */
+  background: red !important;
 }
 
 body.show-nav {
@@ -29,6 +29,11 @@ header {
   position: relative;
   padding: 2.5rem 1rem;
   text-align: center;
+}
+
+.userBtns {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .toggle {
@@ -185,14 +190,14 @@ textarea {
   align-items: center;
 }
 
-.addEntry {
+.addEntry, .loginBtn {
   padding: 12px 30px;
   background-color: var(--secondary-color);
   border: 0;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 /* Relaxation Journal */
@@ -200,13 +205,36 @@ textarea {
 .Jradios {
   display: flex;
   justify-content: space-between;
+  margin: 1.25rem 0;
 }
 
 .accordian {
   border-bottom: 2px solid var(--list-border-color);
 }
 
-/* .JwhatWentWellToday li {
-  border: none;
-  padding: 0;
-} */
+/* loginModal */
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-title {
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+}
+
