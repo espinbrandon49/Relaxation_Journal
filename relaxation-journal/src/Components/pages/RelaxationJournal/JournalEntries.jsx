@@ -7,7 +7,7 @@ const JournalEntries = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/api/entry/journal")
+    Axios.get("https://relaxationjournalapi.onrender.com/api/entry/journal")
       .then((response) => {
         if (localStorage.accessToken) {
           const user = localStorage.accessToken.split("/")[0]

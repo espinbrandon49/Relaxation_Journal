@@ -12,7 +12,7 @@ const SignupModal = ({ show, setShow, handleClose }) => {
   let confirmPassword = "";
 
   const addEntry = () => {
-    Axios.post("http://localhost:3001/api/user/signup", {
+    Axios.post("https://relaxationjournalapi.onrender.com/api/user/signup", {
       ...signup
     })
       .then((response) => {

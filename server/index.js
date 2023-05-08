@@ -11,9 +11,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors())
 
-//TEST CONNECTION
+/**
+ * instructions to deploy onrender 
+ * https://www.youtube.com/watch?v=MTPb4smwpU8 
+ */
+
 app.get("/", (req, res) => {
-  res.send("Server is running...")
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.send("API is running..");
 });
 
 app.use(controllers);

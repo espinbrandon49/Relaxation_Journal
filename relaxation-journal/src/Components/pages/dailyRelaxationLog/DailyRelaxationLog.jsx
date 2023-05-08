@@ -25,7 +25,7 @@ const DailyRelaxationLog = ({handlePageChange}) => {
   const [entry, setEntry] = useState({ tempEntry });
 
   const addEntry = () => {
-    Axios.post("http://localhost:3001/api/entry/journal", {
+    Axios.post("https://relaxationjournalapi.onrender.com/api/entry/journal", {
       ...entry
     })
   }
