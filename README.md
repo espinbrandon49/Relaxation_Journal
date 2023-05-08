@@ -36,7 +36,7 @@ Read about ways to relax and practice relaxation by:
 - Unlocking the benefits of these relaxation techniques by practicing them daily and keeping track in your own Relaxation Log
 
 ## Demo
-[![Demo Video](./relaxation-journal/src/images/VideoScreenshot.png)](./relaxation-journal/src/images/Relaxation%20Journal.mp4)
+[![Demo Video](./relaxation-journal/src/images/VideoScreenshot.png)]([./relaxation-journal/src/images/Relaxation%20Journal.mp4](https://user-images.githubusercontent.com/102924713/236932547-3c218ea9-5a8a-46fb-aa0e-d962ca9fb1b0.mp4))
 
 ## Installation
 ### Application runs in the browser [here](https://relaxationjournalclient.onrender.com/) 
