@@ -21,10 +21,21 @@ const SignupModal = ({ show, setShow, handleClose }) => {
   }
 
   const signupUser = () => {
-    if (signup.password != confirmPassword) {
-      console.log("passwords do not match")
+    if (signup.password !== confirmPassword) {
+      alert("passwords do not match")
       return
     }
+
+    if (signup.password.split("").includes(" ")) {
+      alert("password cannot contain spaces")
+      return
+    }
+
+    if (signup.username.split("").includes(" ")) {
+      alert("username cannot contain spaces")
+      return
+    }
+
     addEntry()
     handleClose();
   }

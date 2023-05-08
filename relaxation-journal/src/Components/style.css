@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif !important;
   margin: 0 !important;
   transition: transform 0.3s ease;
-  background: red !important;
+  /* background: red !important; */
 }
 
 body.show-nav {
@@ -190,7 +190,7 @@ textarea {
   align-items: center;
 }
 
-.addEntry, .loginBtn {
+.addEntry, .loginBtn, .logoutBtn {
   padding: 12px 30px;
   background-color: var(--secondary-color);
   border: 0;
@@ -201,7 +201,6 @@ textarea {
 }
 
 /* Relaxation Journal */
-
 .Jradios {
   display: flex;
   justify-content: space-between;

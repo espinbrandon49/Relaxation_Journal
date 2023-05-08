@@ -14,17 +14,27 @@ const LoginModal = ({ show, setShow, handleClose }) => {
       ...login
     })
       .then((response) => {
-        if (response.data.message == "login success") {
+        if (response.data.message === "login success") {
           localStorage.setItem('accessToken', response.data.user._id.concat("/" + Date.now()))
+          window.location.reload()
         }
+
+        if (response.data.message === "not registered") {
+          alert("No user with that username is registered.  Sign Up to begin relaxing")
+        }
+
+        if (response.data.message === "wrong credentials") {
+          alert("Wrong credentials")
+        }
+
       })
   }
 
   const loginUser = () => {
     addEntry()
-    handleClose();
+    handleClose()
   }
-  
+
   return (
     <>
       <Modal show={show} onHide={handleClose}>

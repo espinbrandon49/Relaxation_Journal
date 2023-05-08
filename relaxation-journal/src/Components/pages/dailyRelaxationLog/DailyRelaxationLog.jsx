@@ -8,8 +8,8 @@ import FeelingDiv from './components/FeelingDiv'
 import SubmitButton from './components/SubmitButton'
 import Axios from 'axios';
 
-const DailyRelaxationLog = () => {
-
+const DailyRelaxationLog = ({handlePageChange}) => {
+  
   let tempEntry = {
     calmBreathing: false,
     progressiveMuscleRelaxation: false,
@@ -18,7 +18,8 @@ const DailyRelaxationLog = () => {
     gratitude1: "",
     gratitude2: "",
     gratitude3: "",
-    feeling: ""
+    feeling: "",
+    postedBy: localStorage.accessToken ? localStorage.accessToken.split("/")[0] : ""
   };
 
   const [entry, setEntry] = useState({ tempEntry });
@@ -31,6 +32,7 @@ const DailyRelaxationLog = () => {
 
   const addToJournal = (e) => {
     addEntry();
+    handlePageChange("relaxationJournal")
     e.preventDefault();
   }
 

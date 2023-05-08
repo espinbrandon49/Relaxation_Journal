@@ -3,12 +3,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LoginModal from './components/LoginModal';
 import SignupModal from './components/SignupModal';
+import UserBtns from './components/userBtns';
 
 const Header = () => {
-  const showNav = () => {
-    document.body.classList.toggle('show-nav');
-  }
-
+  const showNav = () => document.body.classList.toggle('show-nav');
+  
   // login
   const [showl, setShowl] = useState(false);
   const handleClosel = () => setShowl(false);
@@ -19,15 +18,19 @@ const Header = () => {
   const handleCloses = () => setShows(false);
   const handleShows = () => setShows(true);
 
+  const handleLogout = () => {
+    localStorage.removeItem("accessToken")
+    window.location.reload()
+  }
+
   return (
     <header>
       <FontAwesomeIcon icon={faBars} className='toggle' onClick={() => showNav()} />
       <h1>Relaxation Journal</h1>
       <p>Each day take stock of what's going on inside of you</p>
-      <div className='userBtns'>
-        <button className='loginBtn' onClick={handleShowl}>Log In</button>
-        <button className='loginBtn' onClick={handleShows}>Signup</button>
-      </div>
+      <UserBtns handleShowl={handleShowl} handleShows={handleShows}
+      handleLogout={handleLogout}
+      />
       <LoginModal show={showl} setShow={setShowl} handleClose={handleClosel} />
       <SignupModal show={shows} setShow={setShows} handleClose={handleCloses} />
     </header>

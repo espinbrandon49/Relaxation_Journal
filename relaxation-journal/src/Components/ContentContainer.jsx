@@ -19,7 +19,7 @@ const ContentContainer = () => {
       case "calmBreathing":
         return <CalmBreathing />;
       case "dailyRelaxationLog":
-        return <DailyRelaxationLog />;
+        return <DailyRelaxationLog page={page} handlePageChange={handlePageChange}/>;
       case "muscleRelaxationGuide":
         return <MuscleRelaxationGuide />;
       case "reducingTheTension":

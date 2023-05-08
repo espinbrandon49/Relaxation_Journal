@@ -12,7 +12,7 @@ const ProgressiveMuscleRelaxationDiv = ({tempEntry}) => {
           name={name}
           onClick={() => tempEntry.progressiveMuscleRelaxation = true}
           />
-        <label htmlFor={`${name}Y`}>yes</label>
+        <label htmlFor={`${name}Y`}>&nbsp; yes</label>
       </div>
       <div>
         <input
@@ -21,7 +21,7 @@ const ProgressiveMuscleRelaxationDiv = ({tempEntry}) => {
           name={`${name}`}
           onClick={() => tempEntry.progressiveMuscleRelaxation = false}
         />
-        <label htmlFor={`${name}N`}>no &nbsp;</label>
+        <label htmlFor={`${name}N`}>&nbsp; no</label>
       </div>
     </div>
   )

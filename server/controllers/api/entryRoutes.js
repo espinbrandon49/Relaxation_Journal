@@ -9,7 +9,6 @@ router.get('/journal', async (req, res) => {
 
 router.post('/journal', (req, res) => {
   const entry = req.body.tempEntry;
-  console.log(entry)
   try {
     Entry.create({ ...entry })
     res.json("added entry")

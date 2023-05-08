@@ -13,7 +13,7 @@ const CalmBreathingDiv = ({ tempEntry }) => {
           name={name}
           onClick={() => tempEntry.calmBreathing = true}
         />
-        <label htmlFor={`${name}Y`}>yes</label>
+        <label htmlFor={`${name}Y`}>&nbsp; yes</label>
       </div>
       <div>
         <input
@@ -22,7 +22,7 @@ const CalmBreathingDiv = ({ tempEntry }) => {
           name={`${name}`}
           onClick={() => tempEntry.calmBreathing = false}
         />
-        <label htmlFor={`${name}N`}>no &nbsp;</label>
+        <label htmlFor={`${name}N`}>&nbsp; no</label>
       </div>
     </div>
   )

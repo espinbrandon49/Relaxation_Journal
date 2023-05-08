@@ -7,16 +7,13 @@ router.post('/login', async (req, res) => {
   const user = await User.findOne({ username: username })
 
   if (!user) {
-    console.log("not registered")
     res.send({ message: "not registered" })
     return
   }
 
   if (password === user.password) {
-    console.log("success")
     res.send({ message: "login success", user: user })
   } else {
-    console.log("wrong credentials")
     res.send({ message: "wrong credentials" })
   }
 });
