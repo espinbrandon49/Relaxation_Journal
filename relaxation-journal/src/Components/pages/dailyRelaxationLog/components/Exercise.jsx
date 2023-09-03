@@ -5,7 +5,7 @@ const Exercise = ({ tempEntry }) => {
   return (
     <div>
       <div>
-        <h5>Exercise</h5>
+        <h6>Exercise</h6>
         <input
           type="radio"
           id={`${name}Y`}

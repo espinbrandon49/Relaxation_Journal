@@ -3,11 +3,11 @@ import Axios from 'axios';
 import Accordion from 'react-bootstrap/Accordion';
 import { dateFormat } from '../../../helpers/dateFormat';
 
-const JournalEntries = () => {
+const JournalEntries = ({ page, handlePageChange }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://relaxationjournalapi.onrender.com/api/entry/journal")
+    Axios.get("http://localhost:3001/api/entry/journal")
       .then((response) => {
         if (localStorage.accessToken) {
           const user = localStorage.accessToken.split("/")[0]
@@ -16,8 +16,13 @@ const JournalEntries = () => {
       })
   }, [])
 
-  // console.log(data)
-  if (data.length > 0) {
+  console.log(data)
+  if (localStorage.accessToken) {
+    {
+      if (data.length < 1) return (
+        <h2 className='fs-5'>Start your journal entering a <br /> <br /><strong onClick={() => handlePageChange("dailyRelaxationLog")} className='feelingWheelLink'>DAILY RELAXATION LOG</strong></h2>
+      )
+    }
     return (
       <>
         {data.map((item, i) => {
@@ -34,7 +39,7 @@ const JournalEntries = () => {
                     <div>Other: {item.other ? "YES" : "NO"}</div>
                   </div>
                   <div>What Went Well Today</div>
-                  <ol className='JwhatWentWellToday'>
+                  <ol className='JwhatWentWellToday single-list'>
                     <li>{item.gratitude1}</li>
                     <li>{item.gratitude2}</li>
                     <li>{item.gratitude3}</li>
@@ -48,10 +53,9 @@ const JournalEntries = () => {
     )
   } else {
     return (
-      <div className='display-5 text-center'>Log In or Sign Up to <em>start relaxing</em></div>
+      <div className='text-center fs-4'>Log In or Sign Up to start relaxing</div>
     )
   }
-
 }
 
 export default JournalEntries

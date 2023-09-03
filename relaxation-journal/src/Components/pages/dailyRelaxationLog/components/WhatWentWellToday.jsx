@@ -3,7 +3,7 @@ import React from 'react'
 const WhatWentWellToday = ({tempEntry}) => {
   return (
     <div>
-      <h5>What went well today:</h5>
+      <h6>What went well today:</h6>
       <ol className='whatWentWellToday'>
         <li>
           <textarea 

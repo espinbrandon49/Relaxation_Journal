@@ -25,7 +25,7 @@ const DailyRelaxationLog = ({handlePageChange}) => {
   const [entry, setEntry] = useState({ tempEntry });
 
   const addEntry = () => {
-    Axios.post("https://relaxationjournalapi.onrender.com/api/entry/journal", {
+    Axios.post("http://localhost:3001/api/entry/journal", {
       ...entry
     })
   }
@@ -37,10 +37,13 @@ const DailyRelaxationLog = ({handlePageChange}) => {
   }
 
   return (
-    <div className='page'>
+    <div className='dailyRelaxationLog'>
       <h2>Daily Relaxation Log</h2>
       <form>
-        <ul>
+        <ul className='single-list'>
+          <li>
+            <FeelingDiv tempEntry={tempEntry} handlePageChange={handlePageChange} />
+          </li>
           <li className='radios'>
             <CalmBreathingDiv tempEntry={tempEntry} />
             <ProgressiveMuscleRelaxationDiv tempEntry={tempEntry} />
@@ -49,9 +52,6 @@ const DailyRelaxationLog = ({handlePageChange}) => {
           </li>
           <li>
             <WhatWentWellToday tempEntry={tempEntry} />
-          </li>
-          <li>
-            <FeelingDiv tempEntry={tempEntry} />
           </li>
         </ul>
         <SubmitButton addToJournal={addToJournal} />

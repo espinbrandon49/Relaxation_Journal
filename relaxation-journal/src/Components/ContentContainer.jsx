@@ -29,7 +29,7 @@ const ContentContainer = () => {
       case "feelingWheel":
         return <FeelingWheel page={page} handlePageChange={handlePageChange} />;
       case "relaxationJournal":
-        return <RelaxationJournal />;
+        return <RelaxationJournal page={page} handlePageChange={handlePageChange} />;
       default:
         return <Home />;
     };
@@ -40,7 +40,7 @@ const ContentContainer = () => {
   return (
     <>
       <Header />
-      <div className='containerJ' >
+      <div className='container' >
         {renderPage()}
       </div>
       <NavBar page={page} handlePageChange={handlePageChange} />

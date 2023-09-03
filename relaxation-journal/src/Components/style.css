@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
   --primary-color: #30336b;
   --secondary-color: #be2edd;
+  --secondary-color-hover: #8400A5;
   --list-border-color: rgba(200, 200, 200, 0.1);
+  --second-list-border-color: #e6e6e6;
 }
 
 * {
@@ -14,7 +16,6 @@ body {
   font-family: 'Lato', sans-serif !important;
   margin: 0 !important;
   transition: transform 0.3s ease;
-  /* background: red !important; */
 }
 
 body.show-nav {
@@ -22,13 +23,44 @@ body.show-nav {
   transform: translateX(13.5rem);
 }
 
+h2 {
+  margin-bottom: 2rem !important;
+  text-align: center;
+}
+
+.custom-btn {
+  padding: 12px 30px;
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.custom-btn:hover {
+  background-color: #fa6Dff;
+  border: 1px solid var(--secondary-color-hover);
+}
+
+.feelingWheelLink {
+  color: var(--secondary-color);
+}
+
+.feelingWheelLink:hover {
+  color: var(--secondary-color-hover);
+  cursor: pointer;
+}
+
+/* Header */
 header {
   background-color: var(--primary-color);
   color: #fff;
-  font-size: 130%;
+  font-size: 100%;
   position: relative;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .userBtns {
@@ -47,13 +79,7 @@ header {
   padding: 8px 12px;
 }
 
-.containerJ {
-  padding: .75rem;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 50rem;
-}
-
+/* Navbar */
 nav {
   background-color: var(--primary-color);
   border-right: 2px solid var(--list-border-color);
@@ -62,19 +88,20 @@ nav {
   top: 0;
   left: 0;
   width: 13.5rem;
-  height: 100vh;
+  height: 100%;
   z-index: 100;
   transform: translateX(-100%);
 }
 
 nav .logo {
-  padding: 1.875rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
 nav .logo img {
-  height: 4.6875rem;
-  width: 4.6875rem;
+  margin: .5rem 0;
+  height: 7em;
+  width: 7rem;
   border-radius: 50%;
 }
 
@@ -85,14 +112,21 @@ ul {
   margin: 0;
 }
 
-nav ul li,
-li {
+nav ul li {
   border-bottom: 2px solid var(--list-border-color);
   padding: 20px;
 }
 
-nav ul li:hover,
-.feelingWheelLink:hover {
+li {
+  border-bottom: 2px solid var(--second-list-border-color);
+  padding: 12px;
+}
+
+.single-list li:first-child {
+  border-top: 2px solid var(--second-list-border-color);
+}
+
+nav ul li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -102,29 +136,41 @@ li:first-of-type {
   border-top: 2px solid var(--list-border-color);
 }
 
-.page {
-  margin: 0 auto;
-}
-
-.page h2 {
-  text-align: center;
-  padding: 1rem 0;
-}
-
 /* Home */
+.home .home-div:last-child h3 {
+  padding-bottom: 6px;
+}
+
+.home h3 {
+  padding-bottom: .25rem;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.home-div {
+  padding-bottom: 0.25rem;
+}
+
 .homeLi li {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 /* Reducing The Tension */
 .reducingTheTension {
+  height: 100vh;
   text-align: center;
+}
+
+.reducingTheTension p {
+  margin-bottom: 2rem;
 }
 
 /* Calm Breathing */
 .calmBreathing {
   font-weight: bold;
+  height: 100vh;
 }
 
 .calmBreathing .instructions {
@@ -133,29 +179,21 @@ li:first-of-type {
 
 /* Muscle Relaxation Guide */
 .nestedLi li {
-  border: none;
+  border: none !important;
   padding: 0;
   list-style-type: circle;
 }
 
 /* Body Scan */
-.feelingWheelLink {
-  color: var(--secondary-color);
-}
-
-/* Feeling Wheel */
-.feelingWheel {
-  height: 72vh;
-  background-image: url("../images/Feelings+Wheel+WIP.png");
-  background-position: top;
-  background-size: 93%;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #777;
-  padding-top: 5px;
+.bodyScan {
+  height: 100vh;
 }
 
 /* Daily Relaxation Log */
+.dailyRelaxationLog {
+  height: 100vh;
+}
+
 .radios {
   display: flex;
   justify-content: space-between;
@@ -166,41 +204,55 @@ h5 {
 }
 
 .whatWentWellToday li {
-  border: none;
-}
-
-textarea {
-  width: 100%;
+  border: none !important;
 }
 
 .feeling {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1rem 0;
 }
 
 .feeling input {
   border-radius: 5px;
-  padding: .25rem;
+  padding: .5rem;
+  border: 1px solid rgb(118, 118, 118);
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.addEntry, .loginBtn, .logoutBtn {
-  padding: 12px 30px;
-  background-color: var(--secondary-color);
-  border: 0;
+textarea {
+  width: 100%;
   border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 0.5rem;
+  padding: .5rem;
+  vertical-align: middle;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/* Feeling Wheel */
+.feelingWheel {
+  height: 100vh;
+  text-align: center;
+}
+
+.feelingWheel h2 {
+  margin-bottom: 4px !important;
+}
+
+.feelingWheel p {
+  margin: 4px;
+}
+
+.feelingWheel-img {
+  width: 100%;
 }
 
 /* Relaxation Journal */
+.relaxationJournal {
+  height: 100vh;
+}
+
 .Jradios {
   display: flex;
   justify-content: space-between;
@@ -209,6 +261,10 @@ textarea {
 
 .accordian {
   border-bottom: 2px solid var(--list-border-color);
+}
+
+.JwhatWentWellToday {
+  margin-top: 4px;
 }
 
 /* loginModal */
@@ -236,4 +292,3 @@ textarea {
   padding: 8px;
   width: 100%;
 }
-

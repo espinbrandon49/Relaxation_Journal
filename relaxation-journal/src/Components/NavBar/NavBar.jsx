@@ -1,10 +1,10 @@
-import React from 'react'
+import {logo} from '../../images/brandon-square.jpg'
 
 const NavBar = ({ page, handlePageChange }) => {
   return (
     <nav>
       <div className="logo">
-        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+        <img src={require("../../images/brandon-square.jpg")} alt="user" />
       </div>
       <ul>
         <li onClick={() => handlePageChange("home")}>Home</li>

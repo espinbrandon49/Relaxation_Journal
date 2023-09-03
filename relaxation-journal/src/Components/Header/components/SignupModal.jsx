@@ -12,12 +12,13 @@ const SignupModal = ({ show, setShow, handleClose }) => {
   let confirmPassword = "";
 
   const addEntry = () => {
-    Axios.post("https://relaxationjournalapi.onrender.com/api/user/signup", {
+    Axios.post("http://localhost:3001/api/user/signup", {
       ...signup
     })
-      .then((response) => {
-        console.log(response.data.message)
-      })
+      // .then((response) => {
+      //   window.location.replace("http://localhost:3000/")
+      //   console.log(response.data.message)
+      // })
   }
 
   const signupUser = () => {
@@ -37,7 +38,28 @@ const SignupModal = ({ show, setShow, handleClose }) => {
     }
 
     addEntry()
+    loginEntry()
     handleClose();
+  }
+
+  const loginEntry = () => {
+    Axios.post("http://localhost:3001/api/user/login", {
+      ...signup
+    })
+      .then((response) => {
+        if (response.data.message === "login success") {
+          localStorage.setItem('accessToken', response.data.user._id.concat("/" + Date.now()))
+          window.location.reload()
+        }
+
+        if (response.data.message === "not registered") {
+          alert("No user with that username is registered.  Sign Up to begin relaxing")
+        }
+
+        if (response.data.message === "wrong credentials") {
+          alert("Wrong credentials")
+        }
+      })
   }
 
   return (

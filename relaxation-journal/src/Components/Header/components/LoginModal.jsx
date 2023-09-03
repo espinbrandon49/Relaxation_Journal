@@ -10,7 +10,7 @@ const LoginModal = ({ show, setShow, handleClose }) => {
   }
 
   const addEntry = () => {
-    Axios.post("https://relaxationjournalapi.onrender.com/api/user/login", {
+    Axios.post("http://localhost:3001/api/user/login", {
       ...login
     })
       .then((response) => {

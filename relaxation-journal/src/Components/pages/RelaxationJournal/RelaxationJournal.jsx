@@ -1,12 +1,12 @@
 import React from 'react'
 import JournalEntries from "./JournalEntries"
 
-const RelaxationJournal = () => {
+const RelaxationJournal = ({ page, handlePageChange }) => {
 
   return (
-    <div className='page'>
+    <div className='page relaxationJournal'>
       <h2>Relaxation Journal</h2>
-      <JournalEntries/>
+      <JournalEntries page={page} handlePageChange={handlePageChange}/>
     </div>
   )
 }

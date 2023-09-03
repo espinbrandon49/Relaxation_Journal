@@ -6,7 +6,7 @@ const CalmBreathingDiv = ({ tempEntry }) => {
   return (
     <div>
       <div>
-        <h5>Calm Breathing</h5>
+        <h6>Calm Breathing</h6>
         <input
           type="radio"
           id={`${name}Y`}

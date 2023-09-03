@@ -5,7 +5,7 @@ const ProgressiveMuscleRelaxationDiv = ({tempEntry}) => {
   return (
     <div>
       <div>
-        <h5>Progressive Muscle Relaxation</h5>
+        <h6>Progressive Muscle Relaxation</h6>
         <input
           type="radio"
           id={`${name}Y`}

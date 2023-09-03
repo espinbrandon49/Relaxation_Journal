@@ -4,7 +4,7 @@ const MuscleRelaxationGuide = () => {
   return (
     <div className='page muscleRelaxationGuide'>
       <h2>Muscle Relaxation Guide</h2>
-      <ol className='mrg'>
+      <ol className='mrg single-list'>
         <li> <strong>Hands, forearms, and biceps</strong>
           <ul className="nestedLi">
             <li >Clench your fist without causing pain.  Be aware of the tension in your fist, your hand, and your forearm.  Now release and relax.  Feel the looseness in your hand and be aware of how it feels different from when it was tense.</li>

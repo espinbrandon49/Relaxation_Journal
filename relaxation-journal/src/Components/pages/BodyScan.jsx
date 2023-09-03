@@ -2,9 +2,9 @@ import React from 'react'
 
 const BodyScan = ({page, handlePageChange}) => {
   return (
-    <div className='page'>
+    <div className='bodyScan'>
       <h2>Body Scan</h2>
-      <ol>
+      <ol className='single-list'>
         <li>Several times each day (some people even set a reminder on their phone) to stop during the day and take stock of what's going on inside, practice noticing what your body is doing.  This is called a body scan.
           <ul className='nestedLi'>
             <li>Which muscles are tightening?</li>
