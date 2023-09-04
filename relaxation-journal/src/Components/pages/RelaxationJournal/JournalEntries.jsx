@@ -7,16 +7,15 @@ const JournalEntries = ({ page, handlePageChange }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/api/entry/journal")
+    Axios.get("https://relaxationjournalapi.onrender.com/api/entry/journal")
       .then((response) => {
         if (localStorage.accessToken) {
           const user = localStorage.accessToken.split("/")[0]
           setData(response.data.filter(e => e.postedBy._id === user))
         }
       })
-  }, [])
+  })
 
-  console.log(data)
   if (localStorage.accessToken) {
     {
       if (data.length < 1) return (

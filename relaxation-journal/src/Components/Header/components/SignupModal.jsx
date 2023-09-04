@@ -12,13 +12,9 @@ const SignupModal = ({ show, setShow, handleClose }) => {
   let confirmPassword = "";
 
   const addEntry = () => {
-    Axios.post("http://localhost:3001/api/user/signup", {
+    Axios.post("https://relaxationjournalapi.onrender.com/api/user/signup", {
       ...signup
     })
-      // .then((response) => {
-      //   window.location.replace("http://localhost:3000/")
-      //   console.log(response.data.message)
-      // })
   }
 
   const signupUser = () => {
@@ -43,7 +39,7 @@ const SignupModal = ({ show, setShow, handleClose }) => {
   }
 
   const loginEntry = () => {
-    Axios.post("http://localhost:3001/api/user/login", {
+    Axios.post("https://relaxationjournalapi.onrender.com/api/user/login", {
       ...signup
     })
       .then((response) => {
@@ -110,7 +106,7 @@ const SignupModal = ({ show, setShow, handleClose }) => {
             Close
           </Button>
           <Button variant="primary" onClick={signupUser}>
-            Sign Up
+            Sign up
           </Button>
         </Modal.Footer>
       </Modal>

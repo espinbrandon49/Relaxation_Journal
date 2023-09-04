@@ -14,6 +14,9 @@ app.use(cors())
 /**
  * instructions to deploy onrender 
  * https://www.youtube.com/watch?v=MTPb4smwpU8 
+ * when u switch from localhost to live https, make sure u
+ * are requesting from the backend in your client directory requests
+ * 
  */
 
 app.get("/", (req, res) => {
