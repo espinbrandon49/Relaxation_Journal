@@ -80,7 +80,7 @@ const SignupModal = ({ show, setShow, handleClose }) => {
             <div>
               <label htmlFor="password">Password</label>
               <input
-                type="password"
+                type="text"
                 id="password"
                 placeholder="Enter Password"
                 className="form-input"
@@ -91,7 +91,7 @@ const SignupModal = ({ show, setShow, handleClose }) => {
             <div>
               <label htmlFor="password2">Confirm Password</label>
               <input
-                type="password"
+                type="text"
                 id="password2"
                 placeholder="Enter Password Again"
                 className="form-input"

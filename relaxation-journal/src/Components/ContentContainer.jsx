@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header/Header';
 import Home from './pages/Home';
-import CalmBreathing from './pages/CalmBreathing';
+import CalmBreathing from './pages/calmbreathing/CalmBreathing';
 import DailyRelaxationLog from './pages/dailyRelaxationLog/DailyRelaxationLog'
 import MuscleRelaxationGuide from './pages/MuscleRelaxationGuide';
 import ReducingTheTension from './pages/ReducingTheTension';

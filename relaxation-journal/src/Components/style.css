@@ -171,10 +171,32 @@ li:first-of-type {
 .calmBreathing {
   font-weight: bold;
   height: 100vh;
+  margin-bottom: 2rem;
+}
+
+.calmBreathing h1 {
+  color: blue;
+  margin-bottom: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.calmBreathing h5 {
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .calmBreathing .instructions {
   text-decoration: underline;
+}
+
+.iframe {
+  border: 4px solid rgb(118, 118, 118);
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 2rem !important;
 }
 
 /* Muscle Relaxation Guide */
@@ -226,7 +248,8 @@ textarea {
   vertical-align: middle;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
 }
 
