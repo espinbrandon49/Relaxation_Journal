@@ -184,7 +184,11 @@ li:first-of-type {
   text-align: center;
 }
 
-.calmBreathing .instructions {
+.description {
+  text-align: center;
+}
+
+.instructions {
   text-decoration: underline;
 }
 
