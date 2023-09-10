@@ -171,12 +171,9 @@ li:first-of-type {
 .calmBreathing {
   font-weight: bold;
   height: 100vh;
-  margin-bottom: 2rem;
 }
 
-.calmBreathing h1 {
-  color: blue;
-  margin-bottom: 0 !important;
+.calmBreathing h2 {
   margin-bottom: 0.5rem !important;
 }
 
@@ -196,7 +193,10 @@ li:first-of-type {
   border-radius: 4px;
   width: fit-content;
   height: fit-content;
-  margin-bottom: 2rem !important;
+}
+
+.push {
+  height: 2rem;
 }
 
 /* Muscle Relaxation Guide */

@@ -1,43 +1,37 @@
-import { useReducer, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './style.css';
 // import script from './script.js';
 
 const CalmBreathing = () => {
+  const [text, setText] = useState("");
+  const [size, setSize] = useState("relax-container");
+  const totalTime = 16000;
+  const breatheTime = 4000;
+  const holdTime = 4000;
 
-  // script.breathAnimation();
-  const container = useRef();
-  const textRef = useRef();
-
-  breathAnimation()
+  useEffect(() => {
+    breathAnimation()
+  }, [])
 
   function breathAnimation() {
-    // const container = document.getElementById('relaxer-container'),
-    //   text = document.getElementById('text');
-
-    const totalTime = 16000;
-    const breatheTime = 4000;
-    const holdTime = 4000;
-
-    // textRef.innerText = 'Breathe In!';
-    textRef.textContent = 'Breathe In!'
-    container.className = 'relaxer-container grow';
+    setText('Breathe In!');
+    setSize('relaxer-container grow');
 
     setTimeout(() => {
-      // textRef.innerText = 'Hold!'
-      textRef.textContent = 'Hold!'
+      setText('Hold!');
     }, holdTime)
 
     setTimeout(() => {
-      // textRef.innerText = 'Breathe Out!'
-      textRef.textContent = 'Breathe Out!'
-      container.className = 'relaxer-container shrink';
+      setText('Breathe Out!');
+      setSize('relaxer-container shrink');
     }, breatheTime * 2)
 
     setTimeout(() => {
-      // textRef.innerText = 'Hold!'
-      textRef.textContent = 'Hold!'
+      setText('Hold!');
     }, holdTime * 3)
-  }; setInterval(breathAnimation, 16000);
+  };
+  
+  setInterval(breathAnimation, totalTime);
 
   return (
     <div className='page calmBreathing'>
@@ -59,9 +53,9 @@ const CalmBreathing = () => {
       </ol>
 
       <div className='relaxer'>
-        <div className="relaxer-container" id="relaxer-container" ref={container}>
+        <div className={size} id="relaxer-container">
           <div className="circle"></div>
-          <p id="text" ref={textRef}>Breath In!</p>
+          <p id="text">{text}</p>
 
           <div className="pointer-container">
             <span className="pointer"></span>
@@ -78,6 +72,7 @@ const CalmBreathing = () => {
       <div className='iframe'>
         <iframe width="400" height="400" src="https://www.youtube.com/embed/ummIQOQFHZA" title="Square Breathing (Box Breathing) - Coping Skills for Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
+      <div className='push'></div>
     </div>
   )
 }
